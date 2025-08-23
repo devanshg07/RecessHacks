@@ -4,6 +4,7 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
+<<<<<<< HEAD
   /* Updated color palette to match autonoMeal design brief with green/fresh theme */
   --background: oklch(1 0 0);
   --foreground: oklch(0.25 0 0);
@@ -74,6 +75,76 @@
   --sidebar-accent-foreground: oklch(0.95 0 0);
   --sidebar-border: oklch(0.18 0.02 142);
   --sidebar-ring: oklch(0.65 0.2 142 / 0.5);
+=======
+  --background: #ffffff;
+  --foreground: #475569;
+  --card: #ecfeff;
+  --card-foreground: #164e63;
+  --popover: #ffffff;
+  --popover-foreground: #475569;
+  --primary: #164e63;
+  --primary-foreground: #ffffff;
+  --secondary: #d97706;
+  --secondary-foreground: #ffffff;
+  --muted: #fefce8;
+  --muted-foreground: #374151;
+  --accent: #d97706;
+  --accent-foreground: #ffffff;
+  --destructive: #ea580c;
+  --destructive-foreground: #ffffff;
+  --border: #e2e8f0;
+  --input: #fefce8;
+  --ring: rgba(22, 78, 99, 0.5);
+  --chart-1: #d97706;
+  --chart-2: #ea580c;
+  --chart-3: #164e63;
+  --chart-4: #f97316;
+  --chart-5: #d97706;
+  --radius: 0.5rem;
+  --sidebar: #ecfeff;
+  --sidebar-foreground: #475569;
+  --sidebar-primary: #164e63;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #d97706;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #e2e8f0;
+  --sidebar-ring: rgba(22, 78, 99, 0.5);
+}
+
+.dark {
+  --background: #0f172a;
+  --foreground: #f1f5f9;
+  --card: #1e293b;
+  --card-foreground: #67e8f9;
+  --popover: #0f172a;
+  --popover-foreground: #f1f5f9;
+  --primary: #67e8f9;
+  --primary-foreground: #0f172a;
+  --secondary: #f59e0b;
+  --secondary-foreground: #0f172a;
+  --muted: #1e293b;
+  --muted-foreground: #94a3b8;
+  --accent: #f59e0b;
+  --accent-foreground: #0f172a;
+  --destructive: #f97316;
+  --destructive-foreground: #ffffff;
+  --border: #334155;
+  --input: #1e293b;
+  --ring: rgba(103, 232, 249, 0.5);
+  --chart-1: #f59e0b;
+  --chart-2: #f97316;
+  --chart-3: #67e8f9;
+  --chart-4: #fb923c;
+  --chart-5: #f59e0b;
+  --sidebar: #1e293b;
+  --sidebar-foreground: #f1f5f9;
+  --sidebar-primary: #67e8f9;
+  --sidebar-primary-foreground: #0f172a;
+  --sidebar-accent: #f59e0b;
+  --sidebar-accent-foreground: #0f172a;
+  --sidebar-border: #334155;
+  --sidebar-ring: rgba(103, 232, 249, 0.5);
+>>>>>>> fd99dd0 (added an updated frontend)
 }
 
 @theme inline {
@@ -113,6 +184,7 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+<<<<<<< HEAD
 
   /* Added custom animation keyframes and utilities */
   --animate-spin-slow: spin-slow 3s linear infinite;
@@ -134,6 +206,10 @@
   --animate-magnetic-pull: magnetic-pull 0.6s ease-out;
   --animate-ripple: ripple 0.6s linear;
   --animate-levitate: levitate 6s ease-in-out infinite;
+=======
+  --font-sans: var(--font-geist);
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+>>>>>>> fd99dd0 (added an updated frontend)
 }
 
 @layer base {
@@ -141,6 +217,7 @@
     @apply border-border outline-ring/50;
   }
   body {
+<<<<<<< HEAD
     @apply bg-background text-foreground;
   }
 }
@@ -175,10 +252,57 @@
   }
   66% {
     transform: translateY(-10px) rotate(-1deg);
+=======
+    @apply bg-background text-foreground font-sans;
+  }
+}
+
+/* Custom animations for autonoMeal */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulse-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(22, 78, 99, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(22, 78, 99, 0.6);
+  }
+}
+
+@keyframes slide-down {
+  0% {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+>>>>>>> fd99dd0 (added an updated frontend)
   }
 }
 
 @keyframes fade-in {
+<<<<<<< HEAD
   from {
     opacity: 0;
     transform: translateY(20px);
@@ -211,12 +335,58 @@
   }
   100% {
     background-position: 200% 0;
+=======
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scale-in {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes gradient-shift {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes particle-float {
+  0% {
+    transform: translateY(100vh) translateX(0px);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100px) translateX(100px);
+    opacity: 0;
+>>>>>>> fd99dd0 (added an updated frontend)
   }
 }
 
 @keyframes glow-pulse {
   0%,
   100% {
+<<<<<<< HEAD
     box-shadow: 0 0 20px rgba(34, 211, 238, 0.3), 0 0 40px rgba(168, 85, 247, 0.2);
   }
   50% {
@@ -500,6 +670,82 @@
 }
 
 /* Added cursor trail effect */
+=======
+    filter: drop-shadow(0 0 5px rgba(6, 182, 212, 0.5));
+  }
+  50% {
+    filter: drop-shadow(0 0 20px rgba(6, 182, 212, 0.8));
+  }
+}
+
+@keyframes grid-move {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(50px, 50px);
+  }
+}
+
+@keyframes neon-rotate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.float-animation {
+  animation: float 3s ease-in-out infinite;
+}
+
+.pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.animate-slide-down {
+  animation: slide-down 0.8s ease-out;
+}
+
+.animate-slide-up {
+  animation: slide-up 0.6s ease-out;
+}
+
+.animate-slide-up-delay {
+  animation: slide-up 0.6s ease-out 0.2s both;
+}
+
+.animate-slide-up-delay-2 {
+  animation: slide-up 0.6s ease-out 0.4s both;
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease-out;
+}
+
+.animate-fade-in-delay {
+  animation: fade-in 1s ease-out 0.3s both;
+}
+
+.animate-scale-in {
+  animation: scale-in 0.8s ease-out 0.5s both;
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-shift 3s ease infinite;
+}
+
+.animate-float {
+  animation: particle-float linear infinite;
+}
+
+.animate-glow-pulse {
+  animation: glow-pulse 2s ease-in-out infinite;
+}
+
+>>>>>>> fd99dd0 (added an updated frontend)
 .cursor-trail {
   position: fixed;
   pointer-events: none;
@@ -507,7 +753,37 @@
   mix-blend-mode: difference;
 }
 
+<<<<<<< HEAD
 /* Added hover shadow utilities for enhanced depth */
 .hover\:shadow-3xl:hover {
   box-shadow: 0 35px 60px -12px rgba(0, 0, 0, 0.25);
+=======
+.tech-grid {
+  background-image: linear-gradient(rgba(6, 182, 212, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(6, 182, 212, 0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
+  animation: grid-move 20s linear infinite;
+}
+
+.glass-card {
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(6, 182, 212, 0.2);
+}
+
+.neon-border {
+  position: relative;
+}
+
+.neon-border::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 1px;
+  background: linear-gradient(45deg, #06b6d4, #f59e0b, #06b6d4);
+  border-radius: inherit;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: xor;
+  animation: neon-rotate 3s linear infinite;
+>>>>>>> fd99dd0 (added an updated frontend)
 }
