@@ -38,10 +38,13 @@
     "@radix-ui/react-toggle-group": "1.1.1",
     "@radix-ui/react-tooltip": "1.1.6",
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     "@supabase/ssr": "latest",
     "@supabase/supabase-js": "latest",
 >>>>>>> fd99dd0 (added an updated frontend)
+=======
+>>>>>>> c53c712 (built the first frontend layer)
     "autoprefixer": "^10.4.20",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
@@ -53,10 +56,14 @@
     "lucide-react": "^0.454.0",
     "next": "15.2.4",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "next-themes": "^0.4.6",
 =======
     "next-themes": "latest",
 >>>>>>> fd99dd0 (added an updated frontend)
+=======
+    "next-themes": "^0.4.6",
+>>>>>>> c53c712 (built the first frontend layer)
     "react": "^19",
     "react-day-picker": "9.8.0",
     "react-dom": "^19",
