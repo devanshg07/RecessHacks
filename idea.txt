@@ -9,6 +9,7 @@ choose your level
 No experience semi advanced
 Then it gives dishes based off your preferences like cuisines and whatnot
 And you submit a picture and it analyzes how much % of it was good
+<<<<<<< HEAD
 And then you get advancements and whatnot
 give the user the option of how hard they want to be critiqued and ane xplanation and description of the dish
 
@@ -18,3 +19,6 @@ Store Users:
 - Allow the user to choose their level of experience at the beginning
 - Ask user for preferred cuisine and preferred tastes, foods, and ingredients
 - Ask users for dietaryRestrictions
+=======
+And then you get advancements and whatnot
+>>>>>>> c50ae28 (testing for github collab)
