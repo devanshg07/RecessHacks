@@ -12,7 +12,7 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 IMGBB_API_KEY = os.getenv("IMGBB_API_KEY")
 STABILITY_API_KEY = os.getenv("STABILITY_API_KEY")
 
-# 1️⃣ Upload local image to ImgBB
+
 def upload_to_imgbb(image_path):
     with open(image_path, "rb") as f:
         encoded_image = base64.b64encode(f.read())
@@ -25,7 +25,7 @@ def upload_to_imgbb(image_path):
     response.raise_for_status()
     return response.json()["data"]["url"]  # Public image URL
 
-# 2️⃣ Analyze uploaded image with GPT
+
 def analyze_image(image_url):
     response = openai.responses.create(
         model="gpt-4.1-mini",
@@ -39,7 +39,7 @@ def analyze_image(image_url):
     )
     return response.output_text
 
-# 3️⃣ Generate a recipe
+
 def generate_recipe(dish_name):
     response = openai.responses.create(
         model="gpt-4.1-mini",
@@ -47,7 +47,7 @@ def generate_recipe(dish_name):
     )
     return response.output_text
 
-# 4️⃣ Generate an image of the dish using Stability API
+
 def generate_dish_image(dish_name):
     url = "https://api.stability.ai/v2beta/stable-image/generate/core"
 
